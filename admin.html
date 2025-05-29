@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Panel</h2>
+    <p>Miresevjen, admin!</p>
+    <p>Përdoruesi i kyçur: <span id="admin-user"></span></p>
+    <button onclick="window.location.href='home.html'">Shko te kalkulatori</button>
+  </div>
+  <script>
+    document.getElementById("admin-user").innerText = sessionStorage.getItem("loggedInUser");
+  </script>
+</body>
+</html>
