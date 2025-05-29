@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulator i Pagës</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="checkSession()">
+  <div class="container">
+    <h2>Kalkulator i Pagës</h2>
+    <input type="number" id="paga" placeholder="Shkruaj pagën" />
+    <select id="lloji">
+      <option value="bruto">Bruto → Neto</option>
+      <option value="neto">Neto → Bruto</option>
+    </select>
+    <button onclick="llogarit()">Llogarit</button>
+    <p id="rezultati"></p>
+    <button onclick="logout()">Dil (Logout)</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
